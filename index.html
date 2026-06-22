@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ella Anglade · Massages Traditionnels Indiens · Argelès-sur-Mer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Variables de la charte ─── */
+    :root {
+      --brun:      #3A1E0E;
+      --ambre:     #C4874A;
+      --or:        #E2B87E;
+      --parchemin: #F0E6CC;
+      --sienne:    #8B4A2A;
+      --taupe:     #6B4C35;
+    }
+
+    /* ─── Reset & base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--parchemin);
+      color: var(--brun);
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── Typographie ─── */
+    .f-italiana { font-family: 'Italiana', serif; }
+    .f-serif-italic { font-family: 'Instrument Serif', serif; font-style: italic; }
+    .f-sans { font-family: 'Instrument Sans', sans-serif; }
+
+    h1, h2, h3 { font-family: 'Italiana', serif; font-weight: 400; }
+    p { font-family: 'Instrument Sans', sans-serif; }
+
+    /* ─── Nav ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 48px;
+      background: rgba(240, 230, 204, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--or);
+    }
+
+    .nav-logo {
+      font-family: 'Italiana', serif;
+      font-size: 1.25rem;
+      color: var(--brun);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--taupe);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--ambre); }
+
+    /* ─── Ornements SVG inline ─── */
+    .leaf-decoration {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      opacity: 0.6;
+    }
+
+    /* ─── Séparateurs ─── */
+    .separator {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px auto;
+      width: fit-content;
+    }
+
+    .separator-line {
+      width: 80px;
+      height: 1px;
+      background: var(--ambre);
+    }
+
+    .separator-diamond {
+      color: var(--ambre);
+      font-size: 0.6rem;
+      letter-spacing: 6px;
+    }
+
+    /* ─── Hero ─── */
+    #hero {
+      min-height: 100vh;
+      background-color: var(--brun);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 24px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Motif feuilles coins */
+    .hero-leaves {
+      position: absolute;
+      pointer-events: none;
+    }
+    .hero-leaves.tl { top: 24px; left: 24px; }
+    .hero-leaves.tr { top: 24px; right: 24px; }
+    .hero-leaves.bl { bottom: 24px; left: 24px; }
+    .hero-leaves.br { bottom: 24px; right: 24px; }
+
+    /* Cercle sacré derrière le texte */
+    .hero-circle {
+      position: absolute;
+      width: 340px; height: 340px;
+      border-radius: 50%;
+      border: 1px solid rgba(196, 135, 74, 0.25);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    .hero-circle-2 {
+      position: absolute;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      border: 1px solid rgba(196, 135, 74, 0.12);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ambre);
+      margin-bottom: 20px;
+    }
+
+    #hero h1 {
+      font-family: 'Italiana', serif;
+      font-size: clamp(3.2rem, 8vw, 6rem);
+      color: var(--parchemin);
+      line-height: 1.05;
+      letter-spacing: 0.01em;
+    }
+
+    #hero .hero-subtitle {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: var(--ambre);
+      margin-top: 20px;
+    }
+
+    #hero .hero-location {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-top: 10px;
+      opacity: 0.85;
+    }
+
+    #hero .hero-cta {
+      margin-top: 44px;
+      display: inline-block;
+      padding: 13px 36px;
+      border: 1px solid var(--ambre);
+      color: var(--parchemin);
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    #hero .hero-cta:hover {
+      background: var(--ambre);
+      color: var(--brun);
+    }
+
+    /* ─── Sections communes ─── */
+    section {
+      padding: 90px 24px;
+    }
+
+    .section-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ambre);
+      margin-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      color: var(--brun);
+      line-height: 1.1;
+    }
+
+    /* ─── À propos ─── */
+    #apropos {
+      background: var(--parchemin);
+    }
+
+    .apropos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      margin-top: 48px;
+      align-items: start;
+    }
+
+    .apropos-text p {
+      color: var(--taupe);
+      margin-bottom: 18px;
+      line-height: 1.8;
+    }
+
+    .apropos-quote {
+      border-left: 2px solid var(--ambre);
+      padding-left: 24px;
+      margin-top: 32px;
+    }
+
+    .apropos-quote p {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--sienne);
+      line-height: 1.6;
+    }
+
+    .apropos-quote cite {
+      display: block;
+      margin-top: 10px;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      color: var(--taupe);
+      font-style: normal;
+    }
+
+    .apropos-values {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .value-card {
+      padding: 24px 28px;
+      background: rgba(196, 135, 74, 0.08);
+      border-top: 2px solid var(--or);
+    }
+
+    .value-card h3 {
+      font-family: 'Italiana', serif;
+      font-size: 1.3rem;
+      color: var(--brun);
+      margin-bottom: 8px;
+    }
+
+    .value-card p {
+      font-size: 0.88rem;
+      color: var(--taupe);
+      line-height: 1.7;
+    }
+
+    /* ─── Monogramme ─── */
+    .monogram {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--or);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
+    .monogram span {
+      font-family: 'Italiana', serif;
+      font-size: 1.5rem;
+      color: var(--brun);
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── Soins ─── */
+    #soins {
+      background: var(--brun);
+    }
+
+    #soins .section-label { color: var(--or); }
+    #soins h2 { color: var(--parchemin); }
+
+    .soins-intro {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      color: var(--or);
+      font-size: 1.05rem;
+      margin-top: 16px;
+      opacity: 0.9;
+    }
+
+    .soins-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      margin-top: 52px;
+    }
+
+    .soin-card {
+      padding: 40px 36px;
+      background: rgba(240, 230, 204, 0.06);
+      border: 1px solid rgba(226, 184, 126, 0.15);
+      transition: background 0.3s;
+      cursor: default;
+    }
+
+    .soin-card:hover {
+      background: rgba(196, 135, 74, 0.12);
+    }
+
+    .soin-number {
+      font-family: 'Italiana', serif;
+      font-size: 2.5rem;
+      color: rgba(196, 135, 74, 0.25);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .soin-card h3 {
+      font-family: 'Italiana', serif;
+      font-size: 1.5rem;
+      color: var(--parchemin);
+      margin-bottom: 6px;
+    }
+
+    .soin-duration {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ambre);
+      margin-bottom: 16px;
+    }
+
+    .soin-card p {
+      font-size: 0.9rem;
+      color: var(--or);
+      line-height: 1.75;
+      opacity: 0.85;
+    }
+
+    .soin-separator {
+      width: 32px;
+      height: 1px;
+      background: var(--ambre);
+      margin: 16px 0;
+    }
+
+    /* ─── Tarifs ─── */
+    #tarifs {
+      background: var(--parchemin);
+    }
+
+    .tarifs-table {
+      margin-top: 48px;
+      border-top: 1px solid var(--or);
+    }
+
+    .tarif-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(196, 135, 74, 0.2);
+    }
+
+    .tarif-left h3 {
+      font-family: 'Italiana', serif;
+      font-size: 1.25rem;
+      color: var(--brun);
+      margin-bottom: 4px;
+    }
+
+    .tarif-left .tarif-desc {
+      font-size: 0.83rem;
+      color: var(--taupe);
+      font-style: italic;
+      font-family: 'Instrument Serif', serif;
+    }
+
+    .tarif-right {
+      text-align: right;
+      flex-shrink: 0;
+      padding-left: 24px;
+    }
+
+    .tarif-price {
+      font-family: 'Italiana', serif;
+      font-size: 1.5rem;
+      color: var(--ambre);
+    }
+
+    .tarif-duration {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--taupe);
+      margin-top: 2px;
+    }
+
+    .tarifs-note {
+      margin-top: 32px;
+      text-align: center;
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: var(--sienne);
+    }
+
+    /* ─── Lieu ─── */
+    #lieu {
+      background: rgba(58, 30, 14, 0.04);
+      padding: 80px 24px;
+    }
+
+    .lieu-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .lieu-map-placeholder {
+      background: var(--brun);
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--parchemin);
+    }
+
+    .lieu-map-placeholder p {
+      font-family: 'Italiana', serif;
+      font-size: 1.1rem;
+      color: var(--or);
+      text-align: center;
+    }
+
+    .lieu-map-placeholder small {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.75rem;
+      color: rgba(226, 184, 126, 0.6);
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+
+    .lieu-info h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 24px;
+    }
+
+    .lieu-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .lieu-detail-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .lieu-detail-icon {
+      color: var(--ambre);
+      font-size: 1rem;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .lieu-detail-text strong {
+      display: block;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sienne);
+      margin-bottom: 3px;
+    }
+
+    .lieu-detail-text span {
+      font-size: 0.9rem;
+      color: var(--taupe);
+    }
+
+    /* ─── Contact / Réservation ─── */
+    #contact {
+      background: var(--brun);
+      text-align: center;
+      padding: 90px 24px;
+    }
+
+    #contact .section-label { color: var(--or); }
+    #contact h2 { color: var(--parchemin); }
+
+    .contact-quote {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--ambre);
+      margin: 24px auto 0;
+      max-width: 500px;
+      line-height: 1.7;
+    }
+
+    .contact-cta-block {
+      margin-top: 52px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact-phone {
+      font-family: 'Italiana', serif;
+      font-size: 2.2rem;
+      color: var(--parchemin);
+      letter-spacing: 0.04em;
+    }
+
+    .contact-phone a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact-phone a:hover { color: var(--ambre); }
+
+    .contact-hours {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--or);
+      opacity: 0.7;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 14px 42px;
+      background: var(--ambre);
+      color: var(--brun);
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .contact-btn:hover {
+      background: var(--or);
+      transform: translateY(-1px);
+    }
+
+    .contact-address {
+      margin-top: 32px;
+      font-size: 0.82rem;
+      color: rgba(226, 184, 126, 0.6);
+      letter-spacing: 0.08em;
+      font-family: 'Instrument Sans', sans-serif;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      background: #2a1508;
+      padding: 28px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .footer-name {
+      font-family: 'Italiana', serif;
+      font-size: 1rem;
+      color: var(--or);
+      opacity: 0.8;
+    }
+
+    footer .footer-copy {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.72rem;
+      color: rgba(226, 184, 126, 0.35);
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      .nav-links { gap: 20px; }
+      .nav-links a { font-size: 0.7rem; }
+
+      .apropos-grid { grid-template-columns: 1fr; gap: 40px; }
+      .soins-grid { grid-template-columns: 1fr; }
+      .lieu-inner { grid-template-columns: 1fr; }
+
+      footer { flex-direction: column; gap: 8px; text-align: center; }
+
+      .hero-circle, .hero-circle-2 { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .nav-links { display: none; }
+      section { padding: 64px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav>
+    <a class="nav-logo" href="#hero">Ella Anglade</a>
+    <ul class="nav-links">
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#soins">Soins</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#lieu">Lieu</a></li>
+      <li><a href="#contact">Réserver</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ─── Hero ─── -->
+  <section id="hero">
+
+    <!-- Cercles sacrés -->
+    <div class="hero-circle"></div>
+    <div class="hero-circle-2"></div>
+
+    <!-- Feuilles décoratives coins -->
+    <svg class="hero-leaves tl" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="15" cy="30" rx="10" ry="18" fill="#C4874A" opacity="0.4" transform="rotate(-30 15 30)" />
+      <ellipse cx="35" cy="20" rx="7" ry="13" fill="#E2B87E" opacity="0.3" transform="rotate(15 35 20)" />
+      <ellipse cx="42" cy="42" rx="6" ry="11" fill="#C4874A" opacity="0.25" transform="rotate(-10 42 42)" />
+    </svg>
+    <svg class="hero-leaves tr" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="45" cy="30" rx="10" ry="18" fill="#C4874A" opacity="0.4" transform="rotate(30 45 30)" />
+      <ellipse cx="25" cy="20" rx="7" ry="13" fill="#E2B87E" opacity="0.3" transform="rotate(-15 25 20)" />
+      <ellipse cx="18" cy="42" rx="6" ry="11" fill="#C4874A" opacity="0.25" transform="rotate(10 18 42)" />
+    </svg>
+    <svg class="hero-leaves bl" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="15" cy="30" rx="10" ry="18" fill="#C4874A" opacity="0.35" transform="rotate(20 15 30)" />
+      <ellipse cx="38" cy="38" rx="7" ry="13" fill="#E2B87E" opacity="0.25" transform="rotate(-20 38 38)" />
+    </svg>
+    <svg class="hero-leaves br" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="45" cy="30" rx="10" ry="18" fill="#C4874A" opacity="0.35" transform="rotate(-20 45 30)" />
+      <ellipse cx="22" cy="38" rx="7" ry="13" fill="#E2B87E" opacity="0.25" transform="rotate(20 22 38)" />
+    </svg>
+
+    <p class="hero-eyebrow">Soin inspiré de l'Ayurvéda</p>
+    <h1>Ella Anglade</h1>
+    <p class="hero-subtitle">Massages Traditionnels Indiens</p>
+    <p class="hero-location">Argelès-sur-Mer · Sur rendez-vous</p>
+    <a href="#contact" class="hero-cta">Prendre rendez-vous</a>
+  </section>
+
+
+  <!-- ─── À propos ─── -->
+  <section id="apropos">
+    <div class="section-inner">
+      <p class="section-label">À propos</p>
+      <h2>Le soin comme acte<br>de présence</h2>
+
+      <div class="separator">
+        <div class="separator-line"></div>
+        <span class="separator-diamond">◆ ◆ ◆</span>
+        <div class="separator-line"></div>
+      </div>
+
+      <div class="apropos-grid">
+        <div class="apropos-text">
+          <div class="monogram"><span>EA</span></div>
+          <p>
+            Ella Anglade est praticienne en massages traditionnels indiens, formée aux techniques
+            ayurvédiques transmises de génération en génération. Son approche est ancrée dans
+            une philosophie simple : le corps et l'esprit ne font qu'un, et prendre soin de l'un,
+            c'est nourrir l'autre.
+          </p>
+          <p>
+            Installée au Mas Saint Laurent, à Argelès-sur-Mer, elle reçoit dans un espace
+            chaleureux baigné par la lumière du Sud — à l'abri du monde, propice au lâcher-prise.
+          </p>
+          <p>
+            Chaque séance est une invitation à ralentir. À revenir à soi. À laisser les mains
+            guider ce que les mots ne peuvent pas toujours atteindre.
+          </p>
+
+          <div class="apropos-quote">
+            <p>« Prendre soin de soi est le plus beau des actes de générosité. »</p>
+            <cite>— Ella Anglade</cite>
+          </div>
+        </div>
+
+        <div class="apropos-values">
+          <div class="value-card">
+            <h3>Authenticité</h3>
+            <p>Un ancrage dans les traditions ayurvédiques, transmises de génération en génération. Pas de superflu — seulement l'essentiel du soin.</p>
+          </div>
+          <div class="value-card">
+            <h3>Douceur</h3>
+            <p>Un ton chaleureux, jamais clinique. Le corps comme temple. Le soin comme office. La détente comme acte de sagesse.</p>
+          </div>
+          <div class="value-card">
+            <h3>Proximité</h3>
+            <p>Une praticienne présente, à l'écoute. Le lien humain au cœur de chaque séance. La confiance, tissée au fil du toucher.</p>
+          </div>
+          <div class="value-card">
+            <h3>Ancrage local</h3>
+            <p>Le Mas Saint Laurent, Argelès-sur-Mer. La Méditerranée comme écrin. La lumière du Sud comme toile de fond de chaque soin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── Soins ─── -->
+  <section id="soins">
+    <div class="section-inner">
+      <p class="section-label">Les Soins</p>
+      <h2>Des rituels issus<br>de la tradition</h2>
+      <p class="soins-intro">Chaque massage est une conversation silencieuse entre les mains et le corps.</p>
+
+      <div class="separator" style="margin-top: 20px;">
+        <div class="separator-line" style="background: rgba(226,184,126,0.4)"></div>
+        <span class="separator-diamond" style="color: var(--or)">◆ ◆ ◆</span>
+        <div class="separator-line" style="background: rgba(226,184,126,0.4)"></div>
+      </div>
+
+      <div class="soins-grid">
+
+        <div class="soin-card">
+          <div class="soin-number">01</div>
+          <h3>Abhyanga</h3>
+          <div class="soin-duration">Massage corps complet · Ayurvéda classique</div>
+          <div class="soin-separator"></div>
+          <p>
+            L'Abhyanga est le massage fondateur de l'Ayurvéda. Réalisé avec des huiles végétales
+            chauffées et choisies selon votre constitution (Dosha), il nourrit les tissus profonds,
+            stimule la circulation lymphatique et libère les tensions accumulées. Un rituel de
+            régénération complète, corps et esprit.
+          </p>
+        </div>
+
+        <div class="soin-card">
+          <div class="soin-number">02</div>
+          <h3>Shirobhyanga</h3>
+          <div class="soin-duration">Massage crâne · nuque · épaules</div>
+          <div class="soin-separator"></div>
+          <p>
+            Le massage de la tête est considéré en Inde comme le soin le plus précieux — là où
+            réside le centre de l'énergie vitale. Le Shirobhyanga apaise les tensions nerveuses,
+            favorise un sommeil profond et redonne clarté à l'esprit. Idéal pour les états de
+            fatigue mentale ou de surmenage.
+          </p>
+        </div>
+
+        <div class="soin-card">
+          <div class="soin-number">03</div>
+          <h3>Pada Abhyanga</h3>
+          <div class="soin-duration">Massage réflexologie · pieds & jambes</div>
+          <div class="soin-separator"></div>
+          <p>
+            En Ayurvéda, les pieds sont la carte du corps entier. Ce massage profond des pieds
+            et des jambes, aux huiles essentielles réchauffantes, rééquilibre les énergies de
+            bas en haut. Particulièrement bénéfique pour les personnes debout toute la journée
+            ou souffrant de lourdeurs dans les membres inférieurs.
+          </p>
+        </div>
+
+        <div class="soin-card">
+          <div class="soin-number">04</div>
+          <h3>Soin Intégral</h3>
+          <div class="soin-duration">Rituel complet · Abhyanga + Shirobhyanga</div>
+          <div class="soin-separator"></div>
+          <p>
+            Une immersion totale dans l'univers du soin ayurvédique. Le corps est préparé,
+            dénouée, puis la tête et les épaules reçoivent à leur tour toute l'attention.
+            Un temps suspendu pour ceux qui souhaitent s'offrir une expérience profonde de
+            reconnexion à soi — corps, esprit, souffle.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── Tarifs ─── -->
+  <section id="tarifs">
+    <div class="section-inner">
+      <p class="section-label">Tarifs</p>
+      <h2>Des soins accessibles,<br>un engagement sincère</h2>
+
+      <div class="separator">
+        <div class="separator-line"></div>
+        <span class="separator-diamond">◆ ◆ ◆</span>
+        <div class="separator-line"></div>
+      </div>
+
+      <div class="tarifs-table">
+
+        <div class="tarif-row">
+          <div class="tarif-left">
+            <h3>Abhyanga</h3>
+            <span class="tarif-desc">Massage corps complet aux huiles chaudes</span>
+          </div>
+          <div class="tarif-right">
+            <div class="tarif-price">75 €</div>
+            <div class="tarif-duration">60 min</div>
+          </div>
+        </div>
+
+        <div class="tarif-row">
+          <div class="tarif-left">
+            <h3>Abhyanga Prolongé</h3>
+            <span class="tarif-desc">Version approfondie, temps dédié à chaque zone</span>
+          </div>
+          <div class="tarif-right">
+            <div class="tarif-price">95 €</div>
+            <div class="tarif-duration">90 min</div>
+          </div>
+        </div>
+
+        <div class="tarif-row">
+          <div class="tarif-left">
+            <h3>Shirobhyanga</h3>
+            <span class="tarif-desc">Crâne, nuque & épaules · apaisement mental</span>
+          </div>
+          <div class="tarif-right">
+            <div class="tarif-price">45 €</div>
+            <div class="tarif-duration">40 min</div>
+          </div>
+        </div>
+
+        <div class="tarif-row">
+          <div class="tarif-left">
+            <h3>Pada Abhyanga</h3>
+            <span class="tarif-desc">Réflexologie pieds & jambes</span>
+          </div>
+          <div class="tarif-right">
+            <div class="tarif-price">45 €</div>
+            <div class="tarif-duration">45 min</div>
+          </div>
+        </div>
+
+        <div class="tarif-row">
+          <div class="tarif-left">
+            <h3>Soin Intégral</h3>
+            <span class="tarif-desc">Abhyanga + Shirobhyanga · expérience complète</span>
+          </div>
+          <div class="tarif-right">
+            <div class="tarif-price">120 €</div>
+            <div class="tarif-duration">2h</div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="tarifs-note">
+        Les tarifs s'entendent paiement à la séance · Chèques et espèces acceptés<br>
+        Règlement sur place après le soin
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ─── Lieu ─── -->
+  <section id="lieu" style="background: rgba(58,30,14,0.04);">
+    <div class="lieu-inner">
+
+      <!-- Carte stylisée -->
+      <div class="lieu-map-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="20" r="8" stroke="#C4874A" stroke-width="1.5" fill="none"/>
+          <path d="M24 12 C24 12 12 22 12 28 C12 36 24 44 24 44 C24 44 36 36 36 28 C36 22 24 12 24 12Z" stroke="#C4874A" stroke-width="1.5" fill="none" opacity="0.4"/>
+          <circle cx="24" cy="20" r="3" fill="#C4874A" opacity="0.6"/>
+        </svg>
+        <p>Mas Saint Laurent<br>Salt d'en Carbasse</p>
+        <small>Argelès-sur-Mer · 66700</small>
+      </div>
+
+      <div class="lieu-info">
+        <p class="section-label">Le lieu</p>
+        <h2>Mas Saint Laurent<br>Argelès-sur-Mer</h2>
+
+        <div class="separator" style="margin: 20px 0; justify-content: flex-start;">
+          <div class="separator-line"></div>
+          <span class="separator-diamond">◆</span>
+        </div>
+
+        <div class="lieu-detail">
+          <div class="lieu-detail-item">
+            <span class="lieu-detail-icon">◆</span>
+            <div class="lieu-detail-text">
+              <strong>Adresse</strong>
+              <span>Mas Saint Laurent · Salt d'en Carbasse<br>66700 Argelès-sur-Mer</span>
+            </div>
+          </div>
+          <div class="lieu-detail-item">
+            <span class="lieu-detail-icon">◆</span>
+            <div class="lieu-detail-text">
+              <strong>Horaires</strong>
+              <span>Lundi au samedi · 9h – 19h<br>Sur rendez-vous uniquement</span>
+            </div>
+          </div>
+          <div class="lieu-detail-item">
+            <span class="lieu-detail-icon">◆</span>
+            <div class="lieu-detail-text">
+              <strong>Réservations</strong>
+              <span>06 58 89 31 64<br>Par téléphone ou SMS</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="tel:+33658893164" class="contact-btn" style="margin-top: 0; background: var(--ambre); color: var(--brun);">
+          Appeler pour réserver
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ─── Contact / Réservation ─── -->
+  <section id="contact">
+    <div class="section-inner" style="text-align: center;">
+      <p class="section-label">Réservation</p>
+      <h2>Offrez-vous<br>un moment de soin</h2>
+
+      <div class="separator" style="margin: 24px auto;">
+        <div class="separator-line" style="background: rgba(226,184,126,0.35)"></div>
+        <span class="separator-diamond" style="color: var(--or)">◆ ◆ ◆</span>
+        <div class="separator-line" style="background: rgba(226,184,126,0.35)"></div>
+      </div>
+
+      <p class="contact-quote">
+        « Le soin du corps est le début du soin de l'âme. »
+      </p>
+
+      <div class="contact-cta-block">
+        <div class="contact-phone">
+          <a href="tel:+33658893164">06 58 89 31 64</a>
+        </div>
+        <div class="contact-hours">Lundi – Samedi · 9h à 19h</div>
+        <a href="tel:+33658893164" class="contact-btn">Prendre rendez-vous</a>
+      </div>
+
+      <p class="contact-address">
+        Mas Saint Laurent · Salt d'en Carbasse · 66700 Argelès-sur-Mer
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ─── Footer ─── -->
+  <footer>
+    <span class="footer-name">Ella Anglade · Massages Traditionnels Indiens</span>
+    <span class="footer-copy">Identité visuelle 2024 · Argelès-sur-Mer</span>
+  </footer>
+
+</body>
+</html>

@@ -448,6 +448,38 @@
     }
     .soin-benefits li::before { content: '—'; position: absolute; left: 0; color: var(--or); opacity: 0.6; }
 
+
+    /* ─── CGV ─── */
+    #cgv { background: var(--bg); border-top: 1px solid rgba(196,135,74,0.12); }
+    #cgv .si { max-width: 820px; }
+    .cgv-header { margin-bottom: 44px; }
+    .cgv-last-update { font-size: 0.72rem; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 6px; }
+    .cgv-article { margin-bottom: 40px; }
+    .cgv-article h3 {
+      font-family: 'Fraunces', serif; font-weight: 300;
+      font-size: 1.05rem; color: var(--sienne);
+      margin-bottom: 12px; padding-bottom: 8px;
+      border-bottom: 1px solid rgba(196,135,74,0.18);
+    }
+    .cgv-article p, .cgv-article li {
+      font-family: 'DM Sans', sans-serif; font-size: 0.84rem;
+      color: var(--text-light); line-height: 1.9; margin-bottom: 8px;
+    }
+    .cgv-article ul { padding-left: 20px; margin-bottom: 10px; }
+    .cgv-article li { list-style: disc; }
+    .cgv-article strong { color: var(--text); font-weight: 500; }
+    .cgv-note {
+      background: rgba(74,112,85,0.07); border-left: 2px solid var(--vert);
+      padding: 14px 18px; margin-top: 16px;
+      font-size: 0.82rem; color: var(--text-light); line-height: 1.8;
+    }
+    .footer-legal {
+      font-family: 'DM Sans', sans-serif; font-size: 0.7rem;
+      color: rgba(226,184,126,0.45); letter-spacing: 0.05em;
+    }
+    .footer-legal a { color: rgba(226,184,126,0.55); text-decoration: none; }
+    .footer-legal a:hover { color: var(--or); }
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 780px) {
       nav { padding: 14px 20px; }
@@ -525,6 +557,7 @@
         <li><a href="#tarifs" data-i18n="nav.tarifs">Tarifs</a></li>
         <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
         <li><a href="#contact" data-i18n="nav.reserver">Réserver</a></li>
+        <li><a href="#cgv" data-i18n="nav.cgv">CGV</a></li>
       </ul>
       <div class="nav-controls">
         <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Mode sombre / clair">🌙</button>
@@ -811,9 +844,113 @@
 
 
   <!-- ─── FOOTER ─── -->
+
+  <!-- ─── CGV ─── -->
+  <section id="cgv">
+    <div class="si">
+      <div class="cgv-header">
+        <p class="slabel">Informations légales</p>
+        <h2>Conditions Générales<br>de Vente &amp; d'Utilisation</h2>
+        <p class="cgv-last-update">Dernière mise à jour : juin 2025</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 1 — Identification du prestataire</h3>
+        <p><strong>Ella Anglade</strong>, praticienne en massages bien-être ayurvédiques.<br>
+        Activité exercée à titre individuel (auto-entrepreneur).<br>
+        Lieu de soin : Mas Saint Laurent, Argelès-sur-Mer (66700), France.<br>
+        Contact : via WhatsApp (lien disponible sur le site).<br>
+        <em>N° SIRET : à compléter lors de l'immatriculation.</em></p>
+        <div class="cgv-note">⚠ Les massages proposés sont des massages de bien-être à visée non thérapeutique. Ils ne constituent pas des actes de médecine, de kinésithérapie ou de physiothérapie, et ne se substituent en aucun cas à un suivi médical.</div>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 2 — Objet et champ d'application</h3>
+        <p>Les présentes Conditions Générales de Vente (CGV) régissent l'ensemble des prestations de massages bien-être proposées par Ella Anglade à sa clientèle. Toute réservation implique l'acceptation pleine et entière des présentes CGV.</p>
+        <p>Les CGV sont rédigées en français, langue du contrat.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 3 — Prestations et tarifs</h3>
+        <p>Les soins proposés sont les suivants :</p>
+        <ul>
+          <li><strong>Abhyanga</strong> — massage ayurvédique corps complet · 1h · <strong>80 €</strong></li>
+          <li><strong>Abhyanga Kerala</strong> — version approfondie corps complet · 1h30 · <strong>100 €</strong></li>
+          <li><strong>Shirobhyanga</strong> — massage crâne, nuque &amp; épaules · 40 min · <strong>45 €</strong></li>
+          <li><strong>Pada Abhyanga</strong> — réflexologie pieds &amp; jambes · 45 min · <strong>45 €</strong></li>
+          <li><strong>Soin Intégral</strong> — Abhyanga + Shirobhyanga · 2h · <strong>120 €</strong></li>
+        </ul>
+        <p>Les tarifs sont indiqués en euros TTC. Ella Anglade bénéficie de la franchise de TVA conformément à l'article 293 B du CGI.</p>
+        <p>Les prix en vigueur sont ceux affichés sur le site au jour de la réservation. Ella Anglade se réserve le droit de modifier ses tarifs à tout moment, sans effet rétroactif sur les réservations confirmées.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 4 — Réservation et confirmation</h3>
+        <p>Les séances se tiennent <strong>sur rendez-vous uniquement</strong>, pris via WhatsApp. Une réservation est considérée comme confirmée dès lors qu'Ella Anglade en accuse réception par message.</p>
+        <p>Toute réservation engage le client à respecter le créneau convenu. En cas d'empêchement, le client est invité à prévenir dans les meilleurs délais (voir Art. 6).</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 5 — Modalités de paiement</h3>
+        <p>Le paiement s'effectue <strong>à la séance</strong>, directement sur place, à l'issue du soin.</p>
+        <p>Moyens de paiement acceptés :</p>
+        <ul>
+          <li>Espèces</li>
+          <li>Chèque (à l'ordre d'Ella Anglade)</li>
+        </ul>
+        <p>Aucun acompte n'est demandé sauf accord exceptionnel entre les parties.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 6 — Annulation, modification et retard</h3>
+        <p><strong>Annulation par le client :</strong> toute annulation doit être communiquée au minimum <strong>24 heures avant</strong> l'heure de la séance. En deçà de ce délai, une indemnité correspondant à <strong>50 % du tarif</strong> du soin réservé pourra être demandée.</p>
+        <p><strong>Absence sans prévenir (no-show) :</strong> en cas d'absence sans annulation préalable, le tarif intégral de la séance sera dû.</p>
+        <p><strong>Retard du client :</strong> tout retard de plus de 15 minutes pourra entraîner une réduction de la durée du soin, sans modification du tarif. Au-delà de 20 minutes sans prévenir, Ella Anglade se réserve le droit d'annuler la séance et d'appliquer les conditions du no-show.</p>
+        <p><strong>Annulation par la praticienne :</strong> en cas d'empêchement de sa part, Ella Anglade s'engage à prévenir le client dans les meilleurs délais et à proposer un nouveau créneau. Aucune indemnité ne sera due.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 7 — Cadre de soin, respect et comportement</h3>
+        <p>Les soins se déroulent dans un cadre <strong>thérapeutique professionnel et respectueux</strong>. Le client s'engage à respecter la praticienne ainsi que le lieu de soin.</p>
+        <p><strong>Tout comportement, geste ou propos déplacé, à caractère sexuel ou irrespectueux, entraîne l'interruption immédiate et définitive de la séance, sans remboursement.</strong> La praticienne se réserve le droit d'en informer les autorités compétentes si la situation le justifie.</p>
+        <p>Le respect mutuel est la condition première et non négociable de chaque soin.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 8 — Contre-indications et responsabilité médicale</h3>
+        <p>Le client est tenu d'informer la praticienne, avant toute séance, de tout état de santé susceptible de constituer une contre-indication au massage (grossesse, pathologie cardiovasculaire, plaies, fièvre, traitement médical en cours, allergie aux huiles végétales ou essentielles, etc.).</p>
+        <p>En cas de dissimulation volontaire d'informations médicales pertinentes, la responsabilité d'Ella Anglade ne pourra être engagée.</p>
+        <p>Les soins proposés ne remplacent pas un avis ou un traitement médical.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 9 — Protection des données personnelles (RGPD)</h3>
+        <p>Les données personnelles collectées (nom, prénom, coordonnées, informations de santé partagées lors de la séance) sont utilisées exclusivement dans le cadre de la relation de soin. Elles ne sont ni cédées, ni transmises à des tiers.</p>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, le client dispose d'un droit d'accès, de rectification et de suppression de ses données, en adressant une demande via WhatsApp.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 10 — Propriété intellectuelle</h3>
+        <p>L'ensemble des contenus du site (textes, photographies, design) est la propriété exclusive d'Ella Anglade. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 11 — Réclamations et médiation</h3>
+        <p>En cas de litige, le client est invité à contacter Ella Anglade directement via WhatsApp afin de trouver une solution amiable.</p>
+        <p>En cas d'échec de la démarche amiable, le client peut recourir gratuitement à un médiateur de la consommation. Conformément à l'art. L612-1 du Code de la consommation, tout consommateur a le droit de faire appel à un médiateur.</p>
+      </div>
+
+      <div class="cgv-article">
+        <h3>Art. 12 — Droit applicable et juridiction</h3>
+        <p>Les présentes CGV sont soumises au droit français. En cas de litige non résolu par voie amiable ou de médiation, les tribunaux compétents sont ceux du ressort du lieu d'exercice de la praticienne (Argelès-sur-Mer, Pyrénées-Orientales).</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <span class="footer-name">Ella Anglade · Massages Traditionnels Indiens</span>
-    <span class="footer-copy">© 2024 · Argelès-sur-Mer</span>
+    <span class="footer-legal"><a href="#cgv">Conditions Générales de Vente</a></span>
+    <span class="footer-copy">© 2025 · Argelès-sur-Mer</span>
   </footer>
 
 
@@ -823,7 +960,7 @@
   const T = {
     fr: {
       'nav.about':'À propos','nav.soins':'Soins','nav.temo':'Avis',
-      'nav.tarifs':'Tarifs','nav.faq':'FAQ','nav.reserver':'Réserver',
+      'nav.tarifs':'Tarifs','nav.faq':'FAQ','nav.reserver':'Réserver','nav.cgv':'CGV',
       'hero.eyebrow':"Massages issus de la médecine traditionnelle indienne",
       'hero.subtitle':"L'art du massage ayurvédique",
       'hero.location':'Argelès-sur-Mer · Sur rendez-vous',
@@ -884,7 +1021,7 @@
     },
     es: {
       'nav.about':'Sobre mí','nav.soins':'Tratamientos','nav.temo':'Opiniones',
-      'nav.tarifs':'Precios','nav.faq':'FAQ','nav.reserver':'Reservar',
+      'nav.tarifs':'Precios','nav.faq':'FAQ','nav.reserver':'Reservar','nav.cgv':'CGV',
       'hero.eyebrow':'Masajes de la medicina tradicional india',
       'hero.subtitle':'El arte del masaje ayurvédico',
       'hero.location':'Argelès-sur-Mer · Con cita previa',
@@ -945,7 +1082,7 @@
     },
     ca: {
       'nav.about':'Sobre mi','nav.soins':'Tractaments','nav.temo':'Opinions',
-      'nav.tarifs':'Preus','nav.faq':'FAQ','nav.reserver':'Reservar',
+      'nav.tarifs':'Preus','nav.faq':'FAQ','nav.reserver':'Reservar','nav.cgv':'CGV',
       'hero.eyebrow':'Massatges de la medicina tradicional índia',
       'hero.subtitle':"L'art del massatge ayurvèdic",
       'hero.location':"Argelès-sur-Mer · Amb cita prèvia",
@@ -1006,7 +1143,7 @@
     },
     en: {
       'nav.about':'About','nav.soins':'Treatments','nav.temo':'Reviews',
-      'nav.tarifs':'Prices','nav.faq':'FAQ','nav.reserver':'Book',
+      'nav.tarifs':'Prices','nav.faq':'FAQ','nav.reserver':'Book','nav.cgv':'T&C',
       'hero.eyebrow':'Massages from traditional Indian medicine',
       'hero.subtitle':'The art of Ayurvedic massage',
       'hero.location':'Argelès-sur-Mer · By appointment',

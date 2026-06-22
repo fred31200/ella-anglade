@@ -463,6 +463,11 @@
         <span class="lo-code">CA</span>
         <span class="lo-lang-name">Català</span>
       </button>
+      <button class="lo-btn" onclick="setLang('en')">
+        <span class="lo-flag">🇬🇧</span>
+        <span class="lo-code">EN</span>
+        <span class="lo-lang-name">English</span>
+      </button>
     </div>
   </div>
 
@@ -486,6 +491,8 @@
           <button class="lang-switch-btn" onclick="setLang('es')" id="sw-es">ES</button>
           <span class="lang-dot">·</span>
           <button class="lang-switch-btn" onclick="setLang('ca')" id="sw-ca">CA</button>
+          <span class="lang-dot">·</span>
+          <button class="lang-switch-btn" onclick="setLang('en')" id="sw-en">EN</button>
         </div>
       </div>
     </div>
@@ -943,7 +950,70 @@
   const WA_MSGS = {
     fr: 'Bonjour%20Ella%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20un%20massage.',
     es: 'Hola%20Ella%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20para%20un%20masaje.',
-    ca: 'Hola%20Ella%2C%20m\'agradaria%20demanar%20cita%20per%20a%20un%20massatge.'
+    ca: 'Hola%20Ella%2C%20m\'agradaria%20demanar%20cita%20per%20a%20un%20massatge.',
+    en: 'Hello%20Ella%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20massage.'
+  };
+
+    en: {
+      'nav.about':'About','nav.soins':'Treatments','nav.temo':'Reviews',
+      'nav.tarifs':'Prices','nav.faq':'FAQ','nav.reserver':'Book',
+      'hero.eyebrow':'Inspired by Ayurveda',
+      'hero.subtitle':'Traditional Indian Massages',
+      'hero.location':'Argelès-sur-Mer · By appointment',
+      'hero.cta':'Book an appointment',
+      'apropos.label':'About',
+      'apropos.title':'Care as an act<br>of presence',
+      'apropos.p1':"Ella Anglade is a traditional Indian massage practitioner, trained in Ayurvedic techniques passed down through generations.",
+      'apropos.p2':"Based at Mas Saint Laurent in Argelès-sur-Mer, she welcomes you in a warm space bathed in southern light — a refuge from the world, ideal for letting go.",
+      'apropos.p3':"Each session is an invitation to slow down. To return to yourself. To let hands guide what words cannot always reach.",
+      'apropos.quote':'« Taking care of yourself is the most beautiful act of generosity. »',
+      'val.auth.title':'Authenticity','val.auth.text':"Rooted in Ayurvedic traditions. No frills — only the essence of care.",
+      'val.doux.title':'Gentleness','val.doux.text':"A warm tone, never clinical. The body as a temple. Relaxation as an act of wisdom.",
+      'val.prox.title':'Closeness','val.prox.text':"The human connection at the heart of every session. Trust, woven thread by thread through touch.",
+      'val.local.title':'Local roots','val.local.text':"Mas Saint Laurent, Argelès-sur-Mer. The Mediterranean as a backdrop.",
+      'soins.label':'Treatments','soins.title':'Rituals from<br>tradition',
+      'soins.intro':'Each massage is a silent conversation between the hands and the body.',
+      'soin1.dur':'Full body massage · Classic Ayurveda',
+      'soin1.desc':"Abhyanga is the founding massage of Ayurveda. Warm vegetable oils selected according to your constitution (Dosha) nourish deep tissues, stimulate lymphatic circulation and release accumulated tension.",
+      'soin2.dur':'Head · neck · shoulder massage',
+      'soin2.desc':'Shirobhyanga soothes nervous tension, promotes deep sleep and restores mental clarity. Ideal for mental fatigue and burnout.',
+      'soin3.dur':'Reflexology · feet & legs',
+      'soin3.desc':"In Ayurveda, the feet are the map of the entire body. Warming essential oils, energy rebalancing. Ideal for heavy legs.",
+      'soin4.title':'Integral Treatment','soin4.dur':'Full ritual · Abhyanga + Shirobhyanga',
+      'soin4.desc':'Total immersion in the Ayurvedic universe. Body and head receive full attention. Deep reconnection — body, mind, breath.',
+      'temo.label':'Reviews','temo.title':'They lived<br>the experience',
+      'temo1.text':'« A moment outside of time. Ella\'s Abhyanga has a rare depth — her hands know exactly where tension hides. I left feeling light, as after a long rest. »',
+      'temo1.detail':'Perpignan · Abhyanga',
+      'temo2.text':'« I came looking for stress relief and found much more. The Shirobhyanga is incredible — I slept deeply that night for the first time in months. »',
+      'temo2.detail':'Figueres · Shirobhyanga',
+      'temo3.text':'« Mas Saint Laurent is a magical place and Ella is an exceptional therapist. The Integral Treatment completely reconnected me with my body. Wholeheartedly recommended. »',
+      'temo3.detail':'Argelès-sur-Mer · Integral Treatment',
+      'tarifs.label':'Prices','tarifs.title':'Accessible care,<br>a sincere commitment',
+      't1.desc':'Full body with warm oils',
+      't2.name':'Extended Abhyanga','t2.desc':'In-depth version',
+      't3.desc':'Head, neck & shoulders','t4.desc':'Foot & leg reflexology',
+      't5.name':'Integral Treatment','t5.desc':'Abhyanga + Shirobhyanga',
+      'tarifs.note':'Payment per session · Cheques and cash accepted · Payment on site',
+      'faq.label':'FAQ','faq.title':'Frequently asked questions',
+      'faq1.q':'Do I need to be in good health to receive a massage?',
+      'faq1.a':"Ayurvedic massages are not recommended in case of fever, acute infection or pregnancy (1st trimester). If in doubt, consult your doctor before the session.",
+      'faq2.q':'What should I wear for the session?',
+      'faq2.a':"The massage is performed on a table with respectful draping. Come in light, comfortable clothing. Towels and a changing area are available. Avoid strong perfumes.",
+      'faq3.q':'What oils do you use?',
+      'faq3.a':"Ella works exclusively with organic vegetable oils — sesame, coconut, sweet almond — enriched with pure essential oils chosen according to your Ayurvedic constitution. Please mention any allergies when booking.",
+      'faq4.q':'How is the session paid for?',
+      'faq4.a':"Payment at the end of the session on site. Cash and cheques accepted. No deposit required.",
+      'faq5.q':'How do I make a booking?',
+      'faq5.a':"By phone or WhatsApp at 06 58 89 31 64, Monday–Saturday 9am–7pm. A message is enough — Ella will reply the same day.",
+      'lieu.label':'Location','lieu.title':'Mas Saint Laurent<br>Argelès-sur-Mer',
+      'lieu.adr.label':'Address','lieu.hor.label':'Opening hours',
+      'lieu.hor.val':'Monday to Saturday · 9am – 7pm<br>By appointment only',
+      'lieu.tel.label':'Phone','lieu.cta':'Book on WhatsApp',
+      'contact.label':'Booking','contact.title':'Give yourself<br>a moment of care',
+      'contact.quote':"« Caring for the body is the beginning of caring for the soul. »",
+      'contact.hours':'Monday – Saturday · 9am to 7pm','contact.cta':'Book on WhatsApp',
+      'wa.tooltip':'Book on WhatsApp',
+    },
   };
 
   let currentLang = 'fr';

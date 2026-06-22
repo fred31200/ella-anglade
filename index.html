@@ -438,6 +438,16 @@
       color: #F5EDE0; font-weight: 500;
     }
 
+
+    .soin-benefits {
+      list-style: none; padding: 0; margin: 14px 0 0 0;
+    }
+    .soin-benefits li {
+      font-size: 0.78rem; color: rgba(226,184,126,0.75);
+      padding: 4px 0 4px 14px; position: relative; line-height: 1.5;
+    }
+    .soin-benefits li::before { content: '—'; position: absolute; left: 0; color: var(--or); opacity: 0.6; }
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 780px) {
       nav { padding: 14px 20px; }
@@ -554,9 +564,9 @@
       <ellipse cx="25" cy="20" rx="7" ry="13" fill="#4A7055" opacity="0.28" transform="rotate(-15 25 20)"/>
       <ellipse cx="18" cy="42" rx="6" ry="11" fill="#4A7055" opacity="0.22" transform="rotate(10 18 42)"/>
     </svg>
-    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Soin inspiré de l'Ayurvéda</p>
+    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Massages issus de la médecine traditionnelle indienne</p>
     <h1>Ella Anglade</h1>
-    <p class="hero-subtitle" data-i18n="hero.subtitle">Massages Traditionnels Indiens</p>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">L'art du massage ayurvédique</p>
     <p class="hero-location" data-i18n="hero.location">Argelès-sur-Mer · Sur rendez-vous</p>
     <a href="#contact" class="hero-cta" data-i18n="hero.cta">Prendre rendez-vous</a>
   </section>
@@ -566,24 +576,26 @@
   <section id="apropos">
     <div class="si">
       <p class="slabel" data-i18n="apropos.label">À propos</p>
-      <h2 data-i18n="apropos.title">Le soin comme acte<br>de présence</h2>
+      <h2 data-i18n="apropos.title">Praticienne en massages<br>ayurvédiques</h2>
       <div class="sep"><div class="sep-line"></div><span class="sep-diamond">◆ ◆ ◆</span><div class="sep-line"></div></div>
       <div class="apropos-grid">
         <div class="apropos-text">
           <div class="monogram"><span>EA</span></div>
-          <p data-i18n="apropos.p1">Ella Anglade est praticienne en massages traditionnels indiens, formée aux techniques ayurvédiques transmises de génération en génération.</p>
-          <p data-i18n="apropos.p2">Installée au Mas Saint Laurent, à Argelès-sur-Mer, elle reçoit dans un espace chaleureux baigné par la lumière du Sud — à l'abri du monde, propice au lâcher-prise.</p>
-          <p data-i18n="apropos.p3">Chaque séance est une invitation à ralentir. À revenir à soi. À laisser les mains guider ce que les mots ne peuvent pas toujours atteindre.</p>
+          <p data-i18n="apropos.p1">Je suis Ella Anglade, praticienne en massages ayurvédiques.</p>
+          <p data-i18n="apropos.p2">Passionnée par le vivant, le mouvement, la beauté et l'intelligence de la vie — en nous et à l'extérieur de nous.</p>
+          <p data-i18n="apropos.p3">L'Ayurveda signifie en sanskrit — la langue traditionnelle indienne des sages — « la connaissance de la longévité de la vie ». Les massages ayurvédiques en sont une branche fondamentale.</p>
+          <p data-i18n="apropos.p4">Ma force : plusieurs formations au cours des deux dernières années, auprès de professionnels formés en France et en Inde. En 2025, j'ai plongé au cœur de cette médecine dans l'état du Tamil Nadu — un mois dans le Sud de l'Inde qui a renforcé ma volonté d'apprendre et confirmé la vision holistique de cette pratique.</p>
+          <p data-i18n="apropos.p5">Depuis toute petite je masse mes proches. Après 7 ans dans l'hôtellerie de luxe, j'ai reconnecté avec mes talents d'enfant : le toucher. L'intention de prendre soin de chacun(e) est devenue ma motivation.</p>
           <div class="apropos-quote">
             <p data-i18n="apropos.quote">« Prendre soin de soi est le plus beau des actes de générosité. »</p>
             <cite>— Ella Anglade</cite>
           </div>
         </div>
         <div class="apropos-values">
-          <div class="val-card vert"><h3 data-i18n="val.auth.title">Authenticité</h3><p data-i18n="val.auth.text">Un ancrage dans les traditions ayurvédiques, transmises de génération en génération. Pas de superflu — seulement l'essentiel du soin.</p></div>
-          <div class="val-card"><h3 data-i18n="val.doux.title">Douceur</h3><p data-i18n="val.doux.text">Un ton chaleureux, jamais clinique. Le corps comme temple. Le soin comme office. La détente comme acte de sagesse.</p></div>
-          <div class="val-card vert"><h3 data-i18n="val.prox.title">Proximité</h3><p data-i18n="val.prox.text">Une praticienne présente, à l'écoute. Le lien humain au cœur de chaque séance. La confiance, tissée au fil du toucher.</p></div>
-          <div class="val-card"><h3 data-i18n="val.local.title">Ancrage local</h3><p data-i18n="val.local.text">Le Mas Saint Laurent, Argelès-sur-Mer. La Méditerranée comme écrin. La lumière du Sud comme toile de fond de chaque soin.</p></div>
+          <div class="val-card vert"><h3 data-i18n="val.auth.title">Simplicité</h3><p data-i18n="val.auth.text">Pas de superflu — l'essence de l'Ayurveda dans le soin.</p></div>
+          <div class="val-card"><h3 data-i18n="val.doux.title">Douceur</h3><p data-i18n="val.doux.text">Mes gestes, ma voix et ma posture sont emplis de douceur.</p></div>
+          <div class="val-card vert"><h3 data-i18n="val.prox.title">Présence</h3><p data-i18n="val.prox.text">À chaque massage, je dédie ma totale présence à la personne entre mes mains.</p></div>
+          <div class="val-card"><h3 data-i18n="val.local.title">Technique</h3><p data-i18n="val.local.text">Méthodique par nature, ma pratique combine une panoplie de techniques issues d'une dizaine de protocoles différents.</p></div>
         </div>
       </div>
     </div>
@@ -594,21 +606,21 @@
   <section id="soins">
     <div class="si">
       <p class="slabel" data-i18n="soins.label">Les Soins</p>
-      <h2 data-i18n="soins.title">Des rituels issus<br>de la tradition</h2>
-      <p class="soins-intro" data-i18n="soins.intro">Chaque massage est une conversation silencieuse entre les mains et le corps.</p>
+      <h2 data-i18n="soins.title">Plus qu'un massage,<br>une expérience sensorielle</h2>
+      <p class="soins-intro" data-i18n="soins.intro">Chaque soin est personnalisé — pression, rythme, huile et senteurs adaptés à votre profil.</p>
       <div class="sep" style="margin-top:18px"><div class="sep-line" style="background:rgba(226,184,126,0.35)"></div><span class="sep-diamond" style="color:var(--or)">◆ ◆ ◆</span><div class="sep-line" style="background:rgba(226,184,126,0.35)"></div></div>
       <div class="soins-grid">
         <div class="soin-card">
           <div class="soin-num">01</div><h3>Abhyanga</h3>
-          <div class="soin-dur" data-i18n="soin1.dur">Massage corps complet · Ayurvéda classique</div>
+          <div class="soin-dur" data-i18n="soin1.dur">Soin ayurvédique · Corps complet · 1h · 80 €</div>
           <div class="soin-sep"></div>
-          <p data-i18n="soin1.desc">L'Abhyanga est le massage fondateur de l'Ayurvéda. Réalisé avec des huiles végétales chauffées selon votre constitution (Dosha), il nourrit les tissus profonds, stimule la circulation lymphatique et libère les tensions accumulées.</p>
+          <p data-i18n="soin1.desc">Un soin conçu pour équilibrer le corps et apaiser l'esprit. J'adapte la pression, le rythme, l'huile et les senteurs selon votre profil. En début de séance, quelques questions orientent un soin entièrement personnalisé.</p><ul class="soin-benefits" data-i18n-list="soin1.benefits"><li>Libère les tensions · détente profonde</li><li>Stimule la circulation sanguine &amp; lymphatique</li><li>Renforce l'immunité · revitalise l'organisme</li><li>Nourrit et assouplit la peau</li><li>Réduit le stress · favorise le sommeil</li><li>Relance l'énergie vitale · équilibre les doshas</li></ul>
         </div>
         <div class="soin-card">
-          <div class="soin-num">02</div><h3>Shirobhyanga</h3>
-          <div class="soin-dur" data-i18n="soin2.dur">Massage crâne · nuque · épaules</div>
+          <div class="soin-num">02</div><h3 data-i18n="soin2.title">Abhyanga Kerala</h3>
+          <div class="soin-dur" data-i18n="soin2.dur">Version approfondie · Corps complet · 1h30 · 100 €</div>
           <div class="soin-sep"></div>
-          <p data-i18n="soin2.desc">Le massage de la tête est considéré en Inde comme le soin le plus précieux. Le Shirobhyanga apaise les tensions nerveuses, favorise un sommeil profond et redonne clarté à l'esprit.</p>
+          <p data-i18n="soin2.desc">L'Abhyanga Kerala est la version prolongée et approfondie du soin ayurvédique classique. Une plongée plus complète dans les couches tissulaires, avec des techniques spécifiques héritées du Kerala, berceau de l'Ayurveda.</p>
         </div>
         <div class="soin-card">
           <div class="soin-num">03</div><h3>Pada Abhyanga</h3>
@@ -682,11 +694,11 @@
       <div class="tarifs-table">
         <div class="tarif-row">
           <div class="tarif-left"><h3>Abhyanga</h3><span class="tdesc" data-i18n="t1.desc">Corps complet aux huiles chaudes</span></div>
-          <div class="tarif-right"><div class="tarif-price">75 €</div><div class="tarif-dur">60 min</div></div>
+          <div class="tarif-right"><div class="tarif-price">80 €</div><div class="tarif-dur">60 min</div></div>
         </div>
         <div class="tarif-row">
-          <div class="tarif-left"><h3 data-i18n="t2.name">Abhyanga Prolongé</h3><span class="tdesc" data-i18n="t2.desc">Version approfondie</span></div>
-          <div class="tarif-right"><div class="tarif-price">95 €</div><div class="tarif-dur">90 min</div></div>
+          <div class="tarif-left"><h3 data-i18n="t2.name">Abhyanga Kerala</h3><span class="tdesc" data-i18n="t2.desc">Version approfondie du Kerala</span></div>
+          <div class="tarif-right"><div class="tarif-price">100 €</div><div class="tarif-dur">90 min</div></div>
         </div>
         <div class="tarif-row">
           <div class="tarif-left"><h3>Shirobhyanga</h3><span class="tdesc" data-i18n="t3.desc">Crâne, nuque & épaules</span></div>
@@ -702,6 +714,7 @@
         </div>
       </div>
       <p class="tarifs-note" data-i18n="tarifs.note">Paiement à la séance · Chèques et espèces acceptés · Règlement sur place</p>
+      <p class="tarifs-note" style="margin-top:10px;font-size:0.8rem;opacity:0.7;" data-i18n="tarifs.huiles">Huiles végétales · macérats huileux · huiles essentielles BIO</p>
     </div>
   </section>
 
@@ -811,26 +824,26 @@
     fr: {
       'nav.about':'À propos','nav.soins':'Soins','nav.temo':'Avis',
       'nav.tarifs':'Tarifs','nav.faq':'FAQ','nav.reserver':'Réserver',
-      'hero.eyebrow':"Soin inspiré de l'Ayurvéda",
-      'hero.subtitle':'Massages Traditionnels Indiens',
+      'hero.eyebrow':"Massages issus de la médecine traditionnelle indienne",
+      'hero.subtitle':"L'art du massage ayurvédique",
       'hero.location':'Argelès-sur-Mer · Sur rendez-vous',
       'hero.cta':'Prendre rendez-vous',
       'apropos.label':'À propos',
-      'apropos.title':'Le soin comme acte<br>de présence',
-      'apropos.p1':"Ella Anglade est praticienne en massages traditionnels indiens, formée aux techniques ayurvédiques transmises de génération en génération.",
-      'apropos.p2':"Installée au Mas Saint Laurent, à Argelès-sur-Mer, elle reçoit dans un espace chaleureux baigné par la lumière du Sud — à l'abri du monde, propice au lâcher-prise.",
-      'apropos.p3':"Chaque séance est une invitation à ralentir. À revenir à soi. À laisser les mains guider ce que les mots ne peuvent pas toujours atteindre.",
+      'apropos.title':'Praticienne en massages<br>ayurvédiques',
+      'apropos.p1':"Je suis Ella Anglade, praticienne en massages ayurvédiques.",
+      'apropos.p2':"Passionnée par le vivant, le mouvement, la beauté et l'intelligence de la vie — en nous et à l'extérieur de nous.",
+      'apropos.p3':"L'Ayurveda signifie en sanskrit — la langue traditionnelle indienne des sages — \u00ab\u00a0la connaissance de la longévité de la vie\u00a0\u00bb. Les massages ayurvédiques en sont une branche fondamentale.",'apropos.p4':"Ma force : plusieurs formations au cours des deux dernières années, auprès de professionnels formés en France et en Inde. En 2025, j'ai plongé au cœur de cette médecine dans l'état du Tamil Nadu — un mois dans le Sud de l'Inde qui a renforcé ma volonté d'apprendre et confirmé la vision holistique de cette pratique.",'apropos.p5':"Depuis toute petite je masse mes proches. Après 7 ans dans l'hôtellerie de luxe, j'ai reconnecté avec mes talents d'enfant : le toucher. L'intention de prendre soin de chacun(e) est devenue ma motivation.",
       'apropos.quote':'« Prendre soin de soi est le plus beau des actes de générosité. »',
-      'val.auth.title':'Authenticité','val.auth.text':"Un ancrage dans les traditions ayurvédiques. Pas de superflu — seulement l'essentiel du soin.",
-      'val.doux.title':'Douceur','val.doux.text':"Un ton chaleureux, jamais clinique. Le corps comme temple. La détente comme acte de sagesse.",
-      'val.prox.title':'Proximité','val.prox.text':"Le lien humain au cœur de chaque séance. La confiance, tissée au fil du toucher.",
-      'val.local.title':'Ancrage local','val.local.text':"Le Mas Saint Laurent, Argelès-sur-Mer. La Méditerranée comme écrin.",
-      'soins.label':'Les Soins','soins.title':'Des rituels issus<br>de la tradition',
-      'soins.intro':'Chaque massage est une conversation silencieuse entre les mains et le corps.',
-      'soin1.dur':'Massage corps complet · Ayurvéda classique',
-      'soin1.desc':"L'Abhyanga est le massage fondateur de l'Ayurvéda. Huiles végétales chauffées selon votre constitution (Dosha), tissus profonds, circulation lymphatique, tensions libérées.",
-      'soin2.dur':'Massage crâne · nuque · épaules',
-      'soin2.desc':'Le Shirobhyanga apaise les tensions nerveuses, favorise un sommeil profond et redonne clarté à l\'esprit. Idéal contre le surmenage.',
+      'val.auth.title':'Simplicité','val.auth.text':"Pas de superflu — l'essence de l'Ayurveda dans le soin.",
+      'val.doux.title':'Douceur','val.doux.text':"Mes gestes, ma voix et ma posture sont emplis de douceur.",
+      'val.prox.title':'Présence','val.prox.text':"À chaque massage, je dédie ma totale présence à la personne entre mes mains.",
+      'val.local.title':'Technique','val.local.text':"Méthodique par nature, ma pratique combine une panoplie de techniques issues d'une dizaine de protocoles différents.",
+      'soins.label':'Les Soins','soins.title':"Plus qu'un massage,<br>une expérience sensorielle",
+      'soins.intro':'Chaque soin est personnalisé — pression, rythme, huile et senteurs adaptés à votre profil.',
+      'soin1.dur':'Soin ayurvédique · Corps complet · 1h · 80 €',
+      'soin1.desc':"Un soin conçu pour équilibrer le corps et apaiser l'esprit. J'adapte la pression, le rythme, l'huile et les senteurs selon votre profil. En début de séance, quelques questions orientent un soin entièrement personnalisé.",
+      'soin2.title':'Abhyanga Kerala','soin2.dur':'Version approfondie · Corps complet · 1h30 · 100 €',
+      'soin2.desc':"L'Abhyanga Kerala est la version prolongée et approfondie du soin classique. Une plongée plus complète dans les couches tissulaires, avec des techniques spécifiques héritées du Kerala, berceau de l'Ayurveda.",
       'soin3.dur':'Massage réflexologie · pieds & jambes',
       'soin3.desc':"En Ayurvéda, les pieds sont la carte du corps entier. Huiles réchauffantes, rééquilibre énergétique. Idéal pour les jambes lourdes.",
       'soin4.title':'Soin Intégral','soin4.dur':'Rituel complet · Abhyanga + Shirobhyanga',
@@ -844,10 +857,10 @@
       'temo3.detail':'Argelès-sur-Mer · Soin Intégral',
       'tarifs.label':'Tarifs','tarifs.title':'Des soins accessibles,<br>un engagement sincère',
       't1.desc':'Corps complet aux huiles chaudes',
-      't2.name':'Abhyanga Prolongé','t2.desc':'Version approfondie',
+      't2.name':'Abhyanga Kerala','t2.desc':'Version approfondie du Kerala',
       't3.desc':'Crâne, nuque & épaules','t4.desc':'Réflexologie pieds & jambes',
       't5.name':'Soin Intégral','t5.desc':'Abhyanga + Shirobhyanga',
-      'tarifs.note':'Paiement à la séance · Chèques et espèces acceptés · Règlement sur place',
+      'tarifs.note':'Paiement à la séance · Chèques et espèces acceptés · Règlement sur place','tarifs.huiles':'Huiles végétales · macérats huileux · huiles essentielles BIO',
       'cadre.eyebrow':'Cadre professionnel','cadre.title':'Cadre de soin & respect mutuel','cadre.text':"Inscrit dans un cadre thérapeutique professionnel et respectueux. Tout comportement, geste ou propos déplacé entraîne <strong>l'interruption immédiate de la séance</strong>. Le respect mutuel est la condition première — et <strong>non négociable</strong> — de chaque soin.",
       'faq.label':'Questions fréquentes','faq.title':'Questions fréquentes',
       'faq1.q':'Dois-je être en bonne santé pour recevoir un massage ?',
@@ -872,26 +885,26 @@
     es: {
       'nav.about':'Sobre mí','nav.soins':'Tratamientos','nav.temo':'Opiniones',
       'nav.tarifs':'Precios','nav.faq':'FAQ','nav.reserver':'Reservar',
-      'hero.eyebrow':'Cuidado inspirado en el Ayurveda',
-      'hero.subtitle':'Masajes Tradicionales Indios',
+      'hero.eyebrow':'Masajes de la medicina tradicional india',
+      'hero.subtitle':'El arte del masaje ayurvédico',
       'hero.location':'Argelès-sur-Mer · Con cita previa',
       'hero.cta':'Reservar cita',
       'apropos.label':'Sobre mí',
-      'apropos.title':'El cuidado como acto<br>de presencia',
-      'apropos.p1':"Ella Anglade es practicante de masajes tradicionales indios, formada en las técnicas ayurvédicas transmitidas de generación en generación.",
-      'apropos.p2':"Instalada en el Mas Saint Laurent, en Argelès-sur-Mer, recibe en un espacio cálido bañado por la luz del Sur — propicio para el descanso profundo.",
-      'apropos.p3':"Cada sesión es una invitación a ralentizar. A volver a uno mismo. A dejar que las manos guíen lo que las palabras no siempre alcanzan.",
+      'apropos.title':'Practicante en masajes<br>ayurvédicos',
+      'apropos.p1':"Soy Ella Anglade, practicante de masajes ayurvédicos.",
+      'apropos.p2':"Apasionada por lo vivo, el movimiento, la belleza y la inteligencia de la vida — en nosotros y a nuestro alrededor.",
+      'apropos.p3':"El Ayurveda significa en sánscrito — la lengua tradicional india de los sabios — \u00ab\u00a0el conocimiento de la longevidad de la vida\u00a0\u00bb. Los masajes ayurvédicos son una rama fundamental de esta medicina.",'apropos.p4':"Mi fortaleza: varias formaciones en los últimos dos años, junto a profesionales formados en Francia y en India. En 2025, me sumergí en el corazón de esta medicina en el estado de Tamil Nadu — un mes en el sur de la India que reforzó mi voluntad de aprender y confirmó la visión holística de esta práctica.",'apropos.p5':"Desde pequeña masajeo a mis seres queridos. Tras 7 años en la hostelería de lujo, reconecté con mis talentos de infancia: el tacto. La intención de cuidar a cada persona se convirtió en mi motivación.",
       'apropos.quote':'« Cuidarse a uno mismo es el más bello de los actos de generosidad. »',
-      'val.auth.title':'Autenticidad','val.auth.text':"Un arraigo en las tradiciones ayurvédicas. Sin superfluidades — solo lo esencial del cuidado.",
-      'val.doux.title':'Suavidad','val.doux.text':"Un tono cálido, nunca clínico. El cuerpo como templo. La relajación como acto de sabiduría.",
-      'val.prox.title':'Cercanía','val.prox.text':"El vínculo humano en el corazón de cada sesión. La confianza, tejida hilo a hilo en el tacto.",
-      'val.local.title':'Arraigo local','val.local.text':"El Mas Saint Laurent, Argelès-sur-Mer. El Mediterráneo como estuche.",
-      'soins.label':'Tratamientos','soins.title':'Rituales de<br>la tradición',
-      'soins.intro':'Cada masaje es una conversación silenciosa entre las manos y el cuerpo.',
-      'soin1.dur':'Masaje cuerpo completo · Ayurveda clásico',
-      'soin1.desc':"El Abhyanga es el masaje fundador del Ayurveda. Aceites vegetales calentados según su constitución (Dosha), tejidos profundos, circulación linfática, tensiones liberadas.",
-      'soin2.dur':'Masaje cráneo · nuca · hombros',
-      'soin2.desc':'El Shirobhyanga alivia las tensiones nerviosas, favorece un sueño profundo y devuelve claridad a la mente. Ideal contra el agotamiento.',
+      'val.auth.title':'Simplicidad','val.auth.text':"Sin superfluidades — la esencia del Ayurveda en el cuidado.",
+      'val.doux.title':'Suavidad','val.doux.text':"Mis gestos, mi voz y mi postura están llenos de suavidad.",
+      'val.prox.title':'Presencia','val.prox.text':"En cada masaje, dedico mi presencia total a la persona entre mis manos.",
+      'val.local.title':'Técnica','val.local.text':"Metódica por naturaleza, mi práctica combina una amplia gama de técnicas de una decena de protocolos diferentes.",
+      'soins.label':'Tratamientos','soins.title':'Más que un masaje,<br>una experiencia sensorial',
+      'soins.intro':'Cada cuidado es personalizado — presión, ritmo, aceite y aromas adaptados a su perfil.',
+      'soin1.dur':'Cuidado ayurvédico · Cuerpo completo · 1h · 80 €',
+      'soin1.desc':"Un cuidado diseñado para equilibrar el cuerpo y calmar la mente. Adapto la presión, el ritmo, el aceite y los aromas a su perfil. Al inicio de la sesión, unas preguntas orientan un cuidado totalmente personalizado.",
+      'soin2.title':'Abhyanga Kerala','soin2.dur':'Versión en profundidad · Cuerpo completo · 1h30 · 100 €',
+      'soin2.desc':"El Abhyanga Kerala es la versión prolongada y en profundidad del cuidado clásico. Una inmersión más completa en las capas tisulares, con técnicas específicas heredadas del Kerala, cuna del Ayurveda.",
       'soin3.dur':'Reflexología · pies & piernas',
       'soin3.desc':"En Ayurveda, los pies son el mapa del cuerpo entero. Aceites esenciales calentadores, reequilibrio energético. Ideal para las piernas pesadas.",
       'soin4.title':'Tratamiento Integral','soin4.dur':'Ritual completo · Abhyanga + Shirobhyanga',
@@ -905,10 +918,10 @@
       'temo3.detail':'Argelès-sur-Mer · Tratamiento Integral',
       'tarifs.label':'Precios','tarifs.title':'Cuidados accesibles,<br>un compromiso sincero',
       't1.desc':'Cuerpo completo con aceites calientes',
-      't2.name':'Abhyanga Prolongado','t2.desc':'Versión en profundidad',
+      't2.name':'Abhyanga Kerala','t2.desc':'Versión del Kerala en profundidad',
       't3.desc':'Cráneo, nuca & hombros','t4.desc':'Reflexología pies & piernas',
       't5.name':'Tratamiento Integral','t5.desc':'Abhyanga + Shirobhyanga',
-      'tarifs.note':'Pago por sesión · Se aceptan cheques y efectivo · Pago en el lugar',
+      'tarifs.note':'Pago por sesión · Se aceptan cheques y efectivo · Pago en el lugar','tarifs.huiles':'Aceites vegetales · macerados oleosos · aceites esenciales BIO',
       'cadre.eyebrow':'Marco profesional','cadre.title':'Marco de atención & respeto mutuo','cadre.text':"Inscrito en un marco terapéutico profesional y respetuoso. Cualquier comportamiento, gesto o comentario inapropiado conlleva <strong>la interrupción inmediata de la sesión</strong>. El respeto mutuo es la condición primera — e <strong>innegociable</strong> — de cada tratamiento.",
       'faq.label':'Preguntas frecuentes','faq.title':'Preguntas frecuentes',
       'faq1.q':'¿Debo estar en buena salud para recibir un masaje?',
@@ -933,26 +946,26 @@
     ca: {
       'nav.about':'Sobre mi','nav.soins':'Tractaments','nav.temo':'Opinions',
       'nav.tarifs':'Preus','nav.faq':'FAQ','nav.reserver':'Reservar',
-      'hero.eyebrow':"Soin inspirat en l'Ayurveda",
-      'hero.subtitle':'Massatges Tradicionals Indians',
+      'hero.eyebrow':'Massatges de la medicina tradicional índia',
+      'hero.subtitle':"L'art del massatge ayurvèdic",
       'hero.location':"Argelès-sur-Mer · Amb cita prèvia",
       'hero.cta':'Demanar cita',
       'apropos.label':'Sobre mi',
-      'apropos.title':'La cura com a acte<br>de presència',
-      'apropos.p1':"Ella Anglade és practicant de massatges tradicionals indis, formada en les tècniques ayurvèdiques transmeses de generació en generació.",
-      'apropos.p2':"Instal·lada al Mas Saint Laurent, a Argelès-sur-Mer, rep en un espai càlid banyat per la llum del Sud — propici per a l'abandonament.",
-      'apropos.p3':"Cada sessió és una invitació a alentir. A tornar a un mateix. A deixar que les mans guiïn allò que les paraules no sempre poden assolir.",
+      'apropos.title':'Practicant en massatges<br>ayurvèdics',
+      'apropos.p1':"Soc Ella Anglade, practicant de massatges ayurvèdics.",
+      'apropos.p2':"Apassionada pel viu, el moviment, la bellesa i la intel·ligència de la vida — en nosaltres i a l'exterior de nosaltres.",
+      'apropos.p3':"L'Ayurveda significa en sànscrit — la llengua tradicional índia dels savis — \u00ab\u00a0el coneixement de la longevitat de la vida\u00a0\u00bb. Els massatges ayurvèdics en són una branca fonamental.",'apropos.p4':"La meva fortalesa: diverses formacions durant els dos darrers anys, amb professionals formats a França i a l'Índia. El 2025, em vaig endinsar en el cor d'aquesta medicina a l'estat de Tamil Nadu — un mes al sud de l'Índia que va reforçar la meva voluntat d'aprendre i va confirmar la visió holística d'aquesta pràctica.",'apropos.p5':"Des de petita massatjo els meus éssers estimats. Després de 7 anys a la hoteleria de luxe, vaig reconnectar amb els meus talents d'infància: el tacte. La intenció de tenir cura de cadascú s'ha convertit en la meva motivació.",
       'apropos.quote':"« Tenir cura d'un mateix és el més bell dels actes de generositat. »",
-      'val.auth.title':'Autenticitat','val.auth.text':"Un arrelament en les tradicions ayurvèdiques. Sense superfluïtats — només l'essencial de la cura.",
-      'val.doux.title':'Suavitat','val.doux.text':"Un to càlid, mai clínic. El cos com a temple. La relaxació com a acte de saviesa.",
-      'val.prox.title':'Proximitat','val.prox.text':"El vincle humà al cor de cada sessió. La confiança, teixida fil a fil en el tacte.",
-      'val.local.title':'Arrelament local','val.local.text':"El Mas Saint Laurent, Argelès-sur-Mer. La Mediterrània com a estoig.",
-      'soins.label':'Tractaments','soins.title':'Rituals de<br>la tradició',
-      'soins.intro':'Cada massatge és una conversa silenciosa entre les mans i el cos.',
-      'soin1.dur':'Massatge cos complet · Ayurveda clàssic',
-      'soin1.desc':"L'Abhyanga és el massatge fundador de l'Ayurveda. Olis vegetals escalfats segons la seva constitució (Dosha), teixits profunds, circulació limfàtica, tensions alliberades.",
-      'soin2.dur':'Massatge crani · clatell · espatlles',
-      'soin2.desc':"El Shirobhyanga alleuja les tensions nervioses, afavoreix un son profund i retorna claredat a la ment. Ideal contra l'esgotament.",
+      'val.auth.title':'Simplicitat','val.auth.text':"Sense superfluïtats — l'essència de l'Ayurveda en la cura.",
+      'val.doux.title':'Suavitat','val.doux.text':"Els meus gestos, la meva veu i la meva postura estan plens de suavitat.",
+      'val.prox.title':'Presència','val.prox.text':"A cada massatge, dedico la meva presència total a la persona entre les meves mans.",
+      'val.local.title':'Tècnica','val.local.text':"Metòdica per naturalesa, la meva pràctica combina una àmplia gamma de tècniques de protocols diferent.",
+      'soins.label':'Tractaments','soins.title':'Més que un massatge,<br>una experiència sensorial',
+      'soins.intro':'Cada cura és personalitzada — pressió, ritme, oli i aromes adaptats al vostre perfil.',
+      'soin1.dur':'Cura ayurvèdica · Cos complet · 1h · 80 €',
+      'soin1.desc':"Una cura dissenyada per equilibrar el cos i calmar la ment. Adapto la pressió, el ritme, l'oli i les aromes al vostre perfil. A l'inici de la sessió, unes preguntes orienten una cura totalment personalitzada.",
+      'soin2.title':'Abhyanga Kerala','soin2.dur':'Versió aprofundida · Cos complet · 1h30 · 100 €',
+      'soin2.desc':"L'Abhyanga Kerala és la versió prolongada i aprofundida de la cura clàssica. Una immersió més completa en les capes teixidals, amb tècniques específiques heretades del Kerala, bressol de l'Ayurveda.",
       'soin3.dur':'Reflexologia · peus & cames',
       'soin3.desc':"En Ayurveda, els peus són el mapa del cos sencer. Olis essencials escalfadors, reequilibri energètic. Ideal per a les cames pesades.",
       'soin4.title':'Cura Integral','soin4.dur':'Ritual complet · Abhyanga + Shirobhyanga',
@@ -966,10 +979,10 @@
       'temo3.detail':'Argelès-sur-Mer · Cura Integral',
       'tarifs.label':'Preus','tarifs.title':'Cures accessibles,<br>un compromís sincer',
       't1.desc':'Cos complet amb olis calents',
-      't2.name':'Abhyanga Prolongat','t2.desc':'Versió en profunditat',
+      't2.name':'Abhyanga Kerala','t2.desc':'Versió del Kerala aprofundida',
       't3.desc':'Crani, clatell & espatlles','t4.desc':'Reflexologia peus & cames',
       't5.name':'Cura Integral','t5.desc':'Abhyanga + Shirobhyanga',
-      'tarifs.note':"Pagament per sessió · S'accepten xecs i efectiu · Pagament al lloc",
+      'tarifs.note':"Pagament per sessió · S'accepten xecs i efectiu · Pagament al lloc",'tarifs.huiles':'Olis vegetals · macerats oleosos · olis essencials BIO',
       'cadre.eyebrow':'Marc professional','cadre.title':'Marc de cura & respecte mutu','cadre.text':"Inscrit en un marc terapèutic professional i respectuós. Qualsevol comportament, gest o comentari fora de lloc comporta <strong>la interrupció immediata de la sessió</strong>. El respecte mutu és la condició primera — i <strong>no negociable</strong> — de cada cura.",
       'faq.label':'Preguntes freqüents','faq.title':'Preguntes freqüents',
       'faq1.q':'He d\'estar en bona salut per rebre un massatge?',
@@ -994,26 +1007,26 @@
     en: {
       'nav.about':'About','nav.soins':'Treatments','nav.temo':'Reviews',
       'nav.tarifs':'Prices','nav.faq':'FAQ','nav.reserver':'Book',
-      'hero.eyebrow':'Inspired by Ayurveda',
-      'hero.subtitle':'Traditional Indian Massages',
+      'hero.eyebrow':'Massages from traditional Indian medicine',
+      'hero.subtitle':'The art of Ayurvedic massage',
       'hero.location':'Argelès-sur-Mer · By appointment',
       'hero.cta':'Book an appointment',
       'apropos.label':'About',
-      'apropos.title':'Care as an act<br>of presence',
-      'apropos.p1':"Ella Anglade is a traditional Indian massage practitioner, trained in Ayurvedic techniques passed down through generations.",
-      'apropos.p2':"Based at Mas Saint Laurent in Argelès-sur-Mer, she welcomes you in a warm space bathed in southern light — a refuge from the world, ideal for letting go.",
-      'apropos.p3':"Each session is an invitation to slow down. To return to yourself. To let hands guide what words cannot always reach.",
+      'apropos.title':'Ayurvedic massage<br>practitioner',
+      'apropos.p1':"I am Ella Anglade, an Ayurvedic massage practitioner.",
+      'apropos.p2':"Passionate about life, movement, beauty and the intelligence of life — within us and around us.",
+      'apropos.p3':"Ayurveda means in Sanskrit — the traditional language of India's sages — \u00ab\u00a0the knowledge of the longevity of life\u00a0\u00bb. Ayurvedic massages are a fundamental branch of this medicine.",'apropos.p4':"My strength: several training courses over the last two years with professionals trained in France and India. In 2025, I immersed myself in the heart of this medicine in Tamil Nadu — a month in southern India that strengthened my commitment to learning and confirmed the holistic vision of this practice.",'apropos.p5':"I have been massaging loved ones since childhood. After 7 years in luxury hospitality, I reconnected with my childhood talent: touch. The intention to care for each person has become my driving motivation.",
       'apropos.quote':'« Taking care of yourself is the most beautiful act of generosity. »',
-      'val.auth.title':'Authenticity','val.auth.text':"Rooted in Ayurvedic traditions. No frills — only the essence of care.",
-      'val.doux.title':'Gentleness','val.doux.text':"A warm tone, never clinical. The body as a temple. Relaxation as an act of wisdom.",
-      'val.prox.title':'Closeness','val.prox.text':"The human connection at the heart of every session. Trust, woven thread by thread through touch.",
-      'val.local.title':'Local roots','val.local.text':"Mas Saint Laurent, Argelès-sur-Mer. The Mediterranean as a backdrop.",
-      'soins.label':'Treatments','soins.title':'Rituals from<br>tradition',
-      'soins.intro':'Each massage is a silent conversation between the hands and the body.',
-      'soin1.dur':'Full body massage · Classic Ayurveda',
-      'soin1.desc':"Abhyanga is the founding massage of Ayurveda. Warm vegetable oils selected according to your constitution (Dosha) nourish deep tissues, stimulate lymphatic circulation and release accumulated tension.",
-      'soin2.dur':'Head · neck · shoulder massage',
-      'soin2.desc':'Shirobhyanga soothes nervous tension, promotes deep sleep and restores mental clarity. Ideal for mental fatigue and burnout.',
+      'val.auth.title':'Simplicity','val.auth.text':"No frills — the essence of Ayurveda in every treatment.",
+      'val.doux.title':'Gentleness','val.doux.text':"My gestures, my voice and my posture are filled with gentleness.",
+      'val.prox.title':'Presence','val.prox.text':"With every massage, I bring my complete presence to the person in my hands.",
+      'val.local.title':'Technique','val.local.text':"Methodical by nature, my practice draws on a wide range of techniques from around ten different protocols.",
+      'soins.label':'Treatments','soins.title':'More than a massage,<br>a sensory experience',
+      'soins.intro':'Each treatment is personalised — pressure, rhythm, oil and scents adapted to your profile.',
+      'soin1.dur':'Ayurvedic treatment · Full body · 1h · 80 €',
+      'soin1.desc':"A treatment designed to balance the body and calm the mind. I adapt the pressure, rhythm, oil and scents to your profile. At the start of each session, a few questions guide a fully personalised treatment.",
+      'soin2.title':'Abhyanga Kerala','soin2.dur':'In-depth version · Full body · 1h30 · 100 €',
+      'soin2.desc':"Abhyanga Kerala is the extended, in-depth version of the classic Ayurvedic treatment. A deeper immersion into the tissue layers, with specific techniques inherited from Kerala, the birthplace of Ayurveda.",
       'soin3.dur':'Reflexology · feet & legs',
       'soin3.desc':"In Ayurveda, the feet are the map of the entire body. Warming essential oils, energy rebalancing. Ideal for heavy legs.",
       'soin4.title':'Integral Treatment','soin4.dur':'Full ritual · Abhyanga + Shirobhyanga',
@@ -1027,10 +1040,10 @@
       'temo3.detail':'Argelès-sur-Mer · Integral Treatment',
       'tarifs.label':'Prices','tarifs.title':'Accessible care,<br>a sincere commitment',
       't1.desc':'Full body with warm oils',
-      't2.name':'Extended Abhyanga','t2.desc':'In-depth version',
+      't2.name':'Abhyanga Kerala','t2.desc':'In-depth Kerala version',
       't3.desc':'Head, neck & shoulders','t4.desc':'Foot & leg reflexology',
       't5.name':'Integral Treatment','t5.desc':'Abhyanga + Shirobhyanga',
-      'tarifs.note':'Payment per session · Cheques and cash accepted · Payment on site',
+      'tarifs.note':'Payment per session · Cheques and cash accepted · Payment on site','tarifs.huiles':'Vegetable oils · oil macerations · BIO essential oils',
       'cadre.eyebrow':'Professional framework','cadre.title':'Care framework & mutual respect','cadre.text':"Grounded in a professional and respectful therapeutic setting. Any inappropriate behaviour, gesture or comment will result in <strong>the immediate termination of the session</strong>. Mutual respect is the foremost — and <strong>non-negotiable</strong> — condition of every treatment.",
       'faq.label':'FAQ','faq.title':'Frequently asked questions',
       'faq1.q':'Do I need to be in good health to receive a massage?',
